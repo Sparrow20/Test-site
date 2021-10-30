@@ -16,7 +16,7 @@ $container-max-width: 1000px;
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px 150px 75px 150px;
   background: $body-background url("../images/bkg.png") 0 0;
   color: $body-foreground;
   font-size: 16px;
@@ -60,6 +60,7 @@ header {
 }
 
 header h1 {
+  position: relative;
   font-size: 30px;
   line-height: 1.5;
   margin: 0 0 0 -40px;
@@ -265,4 +266,22 @@ a {
 
 #a-title {
   text-decoration: none;
+}
+
+.nav-item {
+  float: left;
+  padding: 10px;
+  // top: 0; 
+  margin: 5px 5px 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+.nav .a {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  float: left;
 }
