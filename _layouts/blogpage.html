@@ -4,7 +4,7 @@ layout: default
 <div class="posts">
     {% for blogpost in site.posts%}
         <article>
-            <h2><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></h2>
+            <h1><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></h1>
             Published on {{ blogpost.date | date_to_string }}
             {{ blogpost.excerpt }}
         </article>

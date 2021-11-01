@@ -52,7 +52,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  //background: rgba(0, 0, 0, 0.1);
   width: 100%;
   border-bottom: 1px dashed $conifer; //header;
   padding: 20px 0;
@@ -81,6 +81,8 @@ header h1 {
 header h1:before {
   content: "./ ";
   font-size: 24px;
+  position: relative;
+  left: 10px;
 }
 
 header h2 {
@@ -89,11 +91,11 @@ header h2 {
   color: #666;
 }
 
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-}
+// #downloads .btn {
+//   display: inline-block;
+//   text-align: center;
+//   margin: 0;
+// }
 
 /* Main Content
 */
@@ -197,9 +199,9 @@ td {
 }
 
 hr {
-  height: 0;
+  height: 2px;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
+  border-top: 1px dashed #b5e853;
   color: #b5e853;
 }
 
@@ -270,18 +272,45 @@ a {
 
 .nav-item {
   float: left;
-  padding: 10px;
+  
   // top: 0; 
   margin: 5px 5px 10px;
   position: relative;
-  bottom: 30px;
+  bottom: 100px;
+  left: -15px;
+  
 }
 
-.nav .a {
+.nav-item a{
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
+  // position: absolute; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-item a:hover {
+  background-color: #b5e853;
+  color: black;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 15%;
+  left: -580px;
+  bottom: 75px;
+}
+.logo img{
+width: 75px;
+height: auto;  
+padding: 15px;  
+
 }
