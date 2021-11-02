@@ -53,17 +53,17 @@ li {
 
 header {
   //background: rgba(0, 0, 0, 0.1);
-  width: 100%;
+  //width: 100%;
   border-bottom: 1px dashed $conifer; //header;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0 0 40px 0;
 }
 
 header h1 {
   position: relative;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 -36px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer;//$header;
@@ -80,9 +80,22 @@ header h1 {
 
 header h1:before {
   content: "./ ";
-  font-size: 24px;
+  font-size: 30px;
   position: relative;
   left: 10px;
+}
+
+
+.logo {
+  position: relative;
+  left: 145px;
+  bottom: 75px;
+  padding: 0 0 5px 0; 
+}
+.logo img{
+width: 75px;
+height: auto;  
+padding: 15px 15px;  
 }
 
 header h2 {
@@ -272,14 +285,13 @@ a {
 
 .nav-item {
   float: left;
-  
   // top: 0; 
   margin: 5px 5px 10px;
   position: relative;
-  bottom: 100px;
+  bottom: 90px;
   left: -15px;
-  
 }
+
 
 .nav-item a{
   overflow: hidden;
@@ -287,11 +299,10 @@ a {
   // position: absolute; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  float: left;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px 14px 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .nav-item a:hover {
@@ -299,18 +310,11 @@ a {
   color: black;
 }
 
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 15%;
-  left: -580px;
-  bottom: 75px;
-}
-.logo img{
-width: 75px;
-height: auto;  
-padding: 15px;  
 
+.logos {
+  float: right;
+  margin: 5px 5px 10px;
+  position: relative;
+  bottom: 100px;
+  left: -15px;
 }
