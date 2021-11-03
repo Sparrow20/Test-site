@@ -1,14 +1,14 @@
 - title: Home  
-  path: /Test-site/
+  path: /site/
   
 - title: About
-  path: /Test-site/about/
+  path: /site/about/
 
 - title: Write-Ups
-  path: /Test-site/write-ups/
+  path: /site/write-ups/
 
 - title: Blog
-  path: /Test-site/blog/
+  path: /site/blog/
 
 - title: Projects
-  path: /Test-site/projects/
+  path: /site/projects/
