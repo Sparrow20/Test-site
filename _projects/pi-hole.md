@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pi Hole 
+title: Pi Hole
 ---
 
 Hello 
