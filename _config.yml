@@ -5,7 +5,7 @@ theme: jekyll-theme-hacker
 collections:
   projects:
     output: true
-    permalink: /site/:collection/:title
+    permalink: /:collection/:title
   writeups:
     output: true
   HTB:
