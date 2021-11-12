@@ -5,7 +5,8 @@ permalink: /blog/
 ---
 
 <div class="posts">
-    {% for post in site.post%}
+    {% assign sorted = site.post| sort: 'date' | reverse %}
+    {% for post in sorted%}
         <article>
             <h1><a href="/site{{ post.url }}">{{ post.title }}</a></h1>
             Published on {{ post.date | date_to_string }}

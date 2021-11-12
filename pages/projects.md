@@ -4,10 +4,13 @@ title: Projects
 permalink: /projects/
 ---
 
-
-{% for projects in site.projects %}
-  <div class="projects">
-    <h2><a href= "/site{{ projects.url }}">{{ projects.title }} </a></h2>
-    {{ projects.content }}
-  </div>
-{% endfor %}
+<div class="projects">
+    {% assign sorted = site.projects| sort: 'date' | reverse %}
+    {% for projects in sorted%}
+        <article>
+            <h1><a href="/site{{ projects.url }}">{{ projects.title }}</a></h1>
+            Published on {{ projects.date | date_to_string }}
+            {{ projects.excerpt }}
+        </article>
+    {% endfor %}
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello world
-date: Nov 09 2021
+title: Hello world 2
+date: Nov 08 2021
 ---
 
 Who am I:
@@ -19,5 +19,3 @@ My current certifications are MTA Networking, MTA Security, MTA Python, and eLea
 Hobbies:
 
 My hobbies include building computers, gaming (mainly Overwatch), and working out. 
-
-

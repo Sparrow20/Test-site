@@ -4,10 +4,13 @@ title: Hack The Box Write-ups
 permalink: /hackthebox/
 ---
 
-
-{% for hackthebox in site.hackthebox %}
-  <div class="hackthebox">
-    <h2><a href= "/site{{ hackthebox.url }}">{{ hackthebox.title }} </a></h2>
-    {{ hackthebox.content }}
-  </div>
-{% endfor %}
+<div class="hackthebox">
+    {% assign sorted = site.hackthebox| sort: 'date' | reverse %}
+    {% for hackthebox in sorted%}
+        <article>
+            <h1><a href="/site{{ hackthebox.url }}">{{ hackthebox.title }}</a></h1>
+            Published on {{ hackthebox.date | date_to_string }}
+            {{ hackthebox.excerpt }}
+        </article>
+    {% endfor %}
+</div>
